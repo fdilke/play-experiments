@@ -33,4 +33,12 @@ object Application extends Controller {
   def hello = Action {
     Ok("Hello World!!")
   }
+
+  def greetings(name: String) = Action {
+    Ok(s"Hello $name, whoever you are!")
+  }
+
+  def salutations(name: String) = Action {
+    Ok(s"Salutations $name, my little furry friend.")
+  }
 }

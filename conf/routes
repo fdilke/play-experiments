@@ -8,5 +8,10 @@ POST    /person                     controllers.Application.addPerson
 GET     /persons                    controllers.Application.getPersons
 GET     /hello                      controllers.Application.hello
 
+# more endpoints passing parameters in different ways
+GET     /greetings/:name            controllers.Application.greetings(name: String)
+GET     /salutations                controllers.Application.salutations(n: String)
+# in this last, we pass the parameter 'n' as e.g. /salutations?n=Felix
+
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET    /assets/*file               controllers.Assets.at(path="/public", file)
