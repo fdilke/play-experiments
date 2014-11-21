@@ -1,4 +1,3 @@
-play-experiments
-================
+# Getting started with Play (Scala)
 
-A test project for learning Play (the Scala web framework)
+This project demonstrate how to create a simple CRUD application with Play. A screencast to the project exist on [playframework.com](http://playframework.com)
